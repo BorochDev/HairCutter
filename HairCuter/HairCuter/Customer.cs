@@ -28,7 +28,7 @@ namespace HairCuter
 			Name = name;
 			Surname = surname;
 			VisitDate = date;
-			Price = ((int)(price*((100 - (int)status))))/100;
+			Price = ((int)(price*((100 - (int)status))))/100.0f;
 		}
 
 	}
