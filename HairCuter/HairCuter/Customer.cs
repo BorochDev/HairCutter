@@ -20,7 +20,7 @@ namespace HairCuter
 		public string Name { get; set; }
 		public string Surname { get; set; }
 		public DateTime VisitDate { get; set; }
-		public float Price { get; set; }
+		public decimal Price { get; set; }
 
 		public Customer(Status status, string name, string surname, DateTime date, float price)
 		{
@@ -28,7 +28,7 @@ namespace HairCuter
 			Name = name;
 			Surname = surname;
 			VisitDate = date;
-			Price = ((int)(price*((100 - (int)status))))/100.0f;
+			Price = ((int)(price*((100 - (int)status))))/100.0m;
 		}
 
 	}
